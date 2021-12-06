@@ -1,0 +1,4 @@
+#!/bin/bash
+export CLOUDANT_AUTH_TYPE=NOAUTH
+export CLOUDANT_URL="https://c6be5bcc-59a8-492d-91fd-59acc17fef02-bluemix.cloudantnosqldb.appdomain.cloud"
+exec "$@"
