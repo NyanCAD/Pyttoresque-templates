@@ -4,7 +4,8 @@ channels:
 dependencies:
   - python
   - pyspice
+  - jupyter_bokeh
+  - bokeh
   - pip
   - pip:
     - Pyttoresque
-    - Bokeh
