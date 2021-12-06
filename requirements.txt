@@ -1,2 +1,0 @@
-Pyttoresque
-Bokeh
