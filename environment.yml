@@ -8,4 +8,4 @@ dependencies:
   - bokeh
   - pip
   - pip:
-    - Pyttoresque
+    - Pyttoresque>=0.2.3
