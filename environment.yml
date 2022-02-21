@@ -3,9 +3,13 @@ channels:
   - conda-forge
 dependencies:
   - python
+  - nodejs
   - pyspice
+  - ngspicesimserver>=0.3.3
+  - pycapnp
+  - jupyter
   - jupyter_bokeh
   - bokeh
   - pip
   - pip:
-    - Pyttoresque>=0.2.3
+    - Pyttoresque>=0.3.3
