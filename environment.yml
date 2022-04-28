@@ -1,15 +1,12 @@
+# SPDX-FileCopyrightText: 2022 Pepijn de Vos
+#
+# SPDX-License-Identifier: MPL-2.0
+
 name: example-environment
 channels:
   - conda-forge
 dependencies:
-  - python
-  - nodejs
   - pyspice
-  - ngspicesimserver>=0.3.3
-  - pycapnp
-  - jupyter
-  - jupyter_bokeh
-  - bokeh
-  - pip
-  - pip:
-    - Pyttoresque>=0.3.3
+  - jupyterlab-mosaic
+  - ngspicesimserver>=0.4.1
+  - pyttoresque>=0.4.2
