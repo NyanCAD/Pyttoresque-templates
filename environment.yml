@@ -8,5 +8,5 @@ channels:
 dependencies:
   - pyspice
   - jupyterlab-mosaic
-  - ngspicesimserver>=0.4.1
-  - pyttoresque>=0.4.2
+  - ngspicesimserver>=0.4.2
+  - pyttoresque>=1.0.1
