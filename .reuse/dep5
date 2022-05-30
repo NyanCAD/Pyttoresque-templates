@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pyttoresque-templates
+Upstream-Contact: Pepijn de Vos <pepijndevos@gmail.com>
+Source: https://github.com/NyanCAD/Pyttoresque-templates
+
+Files: *.ipynb
+Copyright: 2022 Pepijn de Vos <pepijndevos@gmail.com>
+License: MPL-2.0
