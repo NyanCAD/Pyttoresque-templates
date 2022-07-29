@@ -5,8 +5,11 @@
 name: example-environment
 channels:
   - conda-forge
+  - pyviz
+  - litex-hub
 dependencies:
-  - pyspice
+  - pyttoresque>=1.0.2
+  - ngspicesimserver>=0.4.3'
   - jupyterlab-mosaic
-  - ngspicesimserver>=0.4.2
-  - pyttoresque>=1.0.1
+  - pyspice
+  - open_pdks.sky130a
