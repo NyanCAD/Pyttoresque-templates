@@ -5,7 +5,6 @@
 name: example-environment
 channels:
   - conda-forge
-  - pyviz
   - litex-hub
 dependencies:
   - pyttoresque>=1.0.2
