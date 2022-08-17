@@ -8,8 +8,8 @@ from aiocouch import CouchDB
 prefix = os.environ['CONDA_PREFIX']
 pdk = "sky130"
 decl = f".lib {prefix}/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice {{corner}}"
-dburl = "https://c6be5bcc-59a8-492d-91fd-59acc17fef02-bluemix.cloudantnosqldb.appdomain.cloud"
-dbname = "schematics"
+dburl = "http://admin:admin@localhost:5984"
+dbname = "offline"
 user = None
 password = None
 
@@ -63,8 +63,12 @@ async def add_models(db, cellname, models):
             cell["models"][m] = {
                 "name": m,
                 "type": "spice",
-                "reftempl": "X{name} {ports} {properties}" if cellname != "resistor" else "X{name} {ports} GND " + m,
-                "decltempl": decl,
+                "NgSpice": {
+                    "reftempl": "X{name} {ports} {properties}" if cellname != "resistor" else "X{name} {ports} GND " + m,
+                    "decltempl": decl,
+                    "vectors": ["gm", "id", "vdsat"] if cellname in {'nmos', 'pmos'} else [],
+                    "component": "M"+m
+                },
                 "categories": [pdk]
             }
     await cell.save()
