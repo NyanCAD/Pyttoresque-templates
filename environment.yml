@@ -12,3 +12,4 @@ dependencies:
   - jupyterlab-mosaic
   - pyspice
   - open_pdks.sky130a
+  - dask # something depends on dask-core and then complains distribute is missing
