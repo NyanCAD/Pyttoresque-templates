@@ -7,7 +7,7 @@ channels:
   - conda-forge
   - litex-hub
 dependencies:
-  - pyttoresque>=1.1
+  - pyttoresque>=1.1.1
   - ngspicesimserver>=0.5
   - jupyterlab-mosaic
   - pyspice
