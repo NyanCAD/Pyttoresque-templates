@@ -4,12 +4,14 @@
 
 name: example-environment
 channels:
+  - pepijndevos
   - conda-forge
   - litex-hub
 dependencies:
   - pyttoresque>=1.1.1
   - ngspicesimserver>=0.5
   - jupyterlab-mosaic
+  - couchdb
   - pyspice
   - open_pdks.sky130a
-  - dask # something depends on dask-core and then complains distribute is missing
+  - datashader!=0.14.2 # depends on dask-core and then complains distribute is missing
